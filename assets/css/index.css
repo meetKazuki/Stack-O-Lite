@@ -45,7 +45,7 @@ input, button {
   background: transparent;
   border: 1px solid #3f51b5;
   border-radius: 2px;
-  color: #0288d1;
+  color: #111111;
   font-size: 1em;
   height: 40px;
   margin: 0;
@@ -76,22 +76,33 @@ button {
 
 header {
   background-color: #4885ed;
-  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
   min-height: 5vh;
   padding: 0.3rem;
   width: 100%;
 }
 .navbar {
   display: flex;
-  justify-content: flex-end;
   margin-right: 1rem;
+}
+.logo {
+  height: 5vw;
+  justify-self: center;
+  margin-left: 15px;
+}
+.logo img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 .navbar-menu {
   display: flex;
   margin: 0 5px;
 }
 .navbar-link {
-  display: inline;
+  align-content: flex-end;
+  display: flex;
 }
 .navbar-link a {
   color: #FFF7F8;

@@ -4,16 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Stack-O-Lite&mdash;Sign Up</title>
+  <title>Stack-O-Lite&mdash;Sign In</title>
   <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
   <header>
+    <div class="logo">
+      <a href="./">
+        <img src="assets/images/logo_transparent.png" alt="logo">
+      </a>
+    </div>
+
     <nav class="navbar">
       <ul class="navbar-menu">
         <li class="navbar-link"><a href="#">Home</a></li>
       </ul>
-
       <ul class="navbar-menu">
         <li class="navbar-link"><a href="#">About</a></li>
       </ul>
@@ -21,25 +26,21 @@
   </header>
 
   <main>
-    <h2 class="main-title">Create your Account</h2>
+    <h2 class="main-title">Sign In to Continue</h2>
     <section class="container">
-      <form action="" class="form-container">
+      <form action="" class="form-container" id="login-form">
         <label for="lastName">Email Address <span>*</span></label>
-        <input class="form-element" type="email" name="email" placeholder="Your email address" required>
+        <input class="form-element" type="email" name="email" id="email" placeholder="Your email address" required>
 
         <label for="password">Password <span>*</span></label>
-        <input class="form-element" type="password" name="password" placeholder="Your password" required>
+        <input class="form-element" type="password" name="password" id="password" placeholder="Your password" required>
 
-        <label for="password-confirm">Confirm Password <span>*</span></label>
-        <input class="form-element" type="password" name="password-confirm" placeholder="Confirm password" required>
-
-        <button class="btn btn-primary">
-          <a href="">Sign Up for Free</a>
-        </button>
+        <input type="submit" class="btn btn-primary" value="Sign Up for Free">
 
         <p>New here? <span><a href="index.html">Create an account</a></span></p>
       </form>
     </section>
   </main>
+  <script src="assets/js/login.js"></script>
 </body>
 </html>
