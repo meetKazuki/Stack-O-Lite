@@ -1,0 +1,143 @@
+@import './normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto&display=swap');
+
+* {
+  /* border: 0.3px solid red; */
+  margin:  0;
+  padding: 0;
+}
+body {
+  background-color: #fffffa;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  min-height: 100vh;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+}
+a:hover {
+  color: #FF3E41;
+}
+li {
+  list-style: none;
+}
+p {
+  margin: 8px 0;
+  text-align: center;
+}
+label {
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+label span {
+  color:#FF7E6B;
+  font-size: 18px;
+}
+input, button {
+  background: transparent;
+  border: 1px solid #3f51b5;
+  border-radius: 2px;
+  color: #0288d1;
+  font-size: 1em;
+  height: 40px;
+  margin: 0;
+  outline: none;
+  padding: 0 10px;
+  text-align: left;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+.btn {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 45px;
+  min-width: 110px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+header {
+  background-color: #4885ed;
+  align-self: flex-end;
+  min-height: 5vh;
+  padding: 0.3rem;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+.navbar-menu {
+  display: flex;
+  margin: 0 5px;
+}
+.navbar-link {
+  display: inline;
+}
+.navbar-link a {
+  color: #FFF7F8;
+  display: block;
+  font-weight: 300;
+  padding: 0.7rem 0.5rem;
+  text-transform: uppercase;
+}
+.navbar-link a:hover {
+  color: #FF3E41;
+  transition: 0.3s ease-in-out;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.main-title {
+  align-self: center;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 10px;
+  position: relative;
+  text-align: center;
+}
+.container {
+  align-self: center;
+  width: 45%;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+}
+.form-element {
+  margin-bottom: 15px;
+}
+.btn-primary {
+  background: #3b5998;
+}
+.btn-primary:hover {
+  background: #3CDBD3;
+  border: none;
+  transition: 0.4s ease-in-out;
+}
+.btn-primary a {
+  color: #FFF7F8;
+}
