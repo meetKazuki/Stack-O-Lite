@@ -143,6 +143,7 @@ main {
 }
 .btn-primary {
   background: #3b5998;
+  color: #fffffa;
 }
 .btn-primary:hover {
   background: #3CDBD3;
